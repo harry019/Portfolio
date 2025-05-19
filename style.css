@@ -226,12 +226,12 @@ button {
 }
 
 .page3 {
-    height: 100vh;
+    min-height: 100vh; 
     width: 100%;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .page3head {
@@ -239,14 +239,14 @@ button {
     font-weight: 700;
     padding-bottom: 5%;
     text-align: center;
-    width: 100%; 
+    width: 100%;
 }
 
 .page3content {
     width: 70%;
-    height: auto; 
+    height: auto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 40px;
     margin: 0 auto;
 }
@@ -254,8 +254,8 @@ button {
 .project {
     width: 100%;
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -273,7 +273,7 @@ button {
 .monitor-container {
     position: relative;
     width: 100%;
-    max-width: 500px; 
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -287,14 +287,14 @@ button {
 
 .video-container {
     position: absolute;
-    top: 13%; 
-    left: 9.5%; 
-    width: 80.9%; 
-    height: 58.5%; 
+    top: 13%;
+    left: 9.5%;
+    width: 80.9%;
+    height: 58.5%;
     overflow: hidden;
     z-index: 1;
     background-color: #000;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
 
 .screen-video {
@@ -304,13 +304,70 @@ button {
     object-fit: cover;
     display: block;
 }
+
 .projectright {
-    flex: 1; 
+    flex: 1;
     padding: 0 10px;
-    border: none; 
+    border: none;
 }
 
 .projectright p {
     line-height: 1.6;
     color: var(--textcolor1);
+}
+
+.page4 {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.page4 h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
 }
