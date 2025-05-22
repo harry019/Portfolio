@@ -108,8 +108,8 @@ main {
     background: #E4405F;
 }
 
-.social-icon.twitter:hover {
-    background-color: #1da1f2;
+.social-icon.mail:hover {
+    background-color: #ffffff;
 }
 
 .social-icon.linkedin:hover {
@@ -464,7 +464,12 @@ button {
 }
 
 .view {
-    align-self: center;
+    background-color: var(--button);
+    color: var(--maincolor);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    align-self: flex-end;
 }
 
 .page4 {
@@ -521,4 +526,425 @@ button {
 
 .contact-form button:hover {
     background-color: #0056b3;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        height: 60px;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav p {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+    /* Page 1 - Home Section */
+    .page1 {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    .social-sidebar {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+        transform: none;
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icon i {
+        font-size: 16px;
+    }
+
+    .circle-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .text-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .text-circle text {
+        font-size: 10px;
+    }
+
+    .right {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .aboutme {
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .header {
+        font-size: 28px;
+    }
+
+    .headet {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        height: 45px;
+        width: 110px;
+        font-size: 14px;
+        margin: 10px 5px;
+    }
+
+    /* Page 2 - About Section */
+    .page2 {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .page2head {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .page2content {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .page2left,
+    .page2right {
+        width: 100%;
+    }
+
+    .page2lefttitle {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .page2leftdet {
+        gap: 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .page2righttitle {
+        padding-left: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .page2rightdet .skillbox {
+        padding-left: 0;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .box {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    /* Page 3 - Projects Section */
+    .page3 {
+        padding: 40px 20px;
+    }
+
+    .page3head {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .page3content {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .project.odd,
+    .project.even {
+        transform: translateY(50px);
+    }
+
+    .project.visible {
+        transform: translateY(0);
+    }
+
+    .projectleft {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .monitor-container {
+        max-width: 300px;
+    }
+
+    .projectright {
+        padding: 0;
+        text-align: left;
+    }
+
+    .projectright h3 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .projectright p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .feature h3,
+    .tech_stack h3 {
+        font-size: 16px;
+    }
+
+    .features,
+    .techs {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .view {
+        align-self: center;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+
+    /* Contact Section */
+    .max-w-3xl {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .text-4xl {
+        font-size: 24px;
+    }
+
+    .rounded-2xl {
+        border-radius: 15px;
+    }
+
+    .p-8 {
+        padding: 20px;
+    }
+
+    .space-y-6>*+* {
+        margin-top: 15px;
+    }
+
+    /* Footer */
+    .max-w-6xl {
+        padding: 0 20px;
+    }
+
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .gap-10 {
+        gap: 20px;
+    }
+
+    .py-10 {
+        padding: 30px 0;
+    }
+
+    .space-x-5>*+* {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    nav {
+        padding: 0 40px;
+    }
+
+    ul {
+        gap: 35px;
+    }
+
+    .page1 {
+        padding: 0 40px;
+    }
+
+    .left {
+        padding-left: 5%;
+    }
+
+    .circle-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .text-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header {
+        font-size: 36px;
+    }
+
+    .headet {
+        width: 85%;
+    }
+
+    .page2content {
+        width: 85%;
+        gap: 30px;
+    }
+
+    .page2lefttitle {
+        font-size: 22px;
+    }
+
+    .page2righttitle {
+        font-size: 22px;
+    }
+
+    .page2leftdet {
+        font-size: 15px;
+    }
+
+    .page3content {
+        width: 85%;
+        gap: 35px;
+    }
+
+    .monitor-container {
+        max-width: 400px;
+    }
+
+    .projectright h3 {
+        font-size: 20px;
+    }
+
+    .projectright p {
+        font-size: 15px;
+    }
+
+    .max-w-3xl {
+        max-width: 90%;
+    }
+
+    .text-4xl {
+        font-size: 32px;
+    }
+
+    .max-w-6xl {
+        max-width: 90%;
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 24px;
+    }
+
+    .page2head,
+    .page3head {
+        font-size: 20px;
+    }
+
+    .monitor-container {
+        max-width: 250px;
+    }
+
+    .projectright h3 {
+        font-size: 16px;
+    }
+
+    .projectright p {
+        font-size: 13px;
+    }
+
+    .box {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    button {
+        height: 40px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icon i {
+        font-size: 14px;
+    }
 }

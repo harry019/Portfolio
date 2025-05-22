@@ -7,6 +7,7 @@
     <title>Soham Chavan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -37,9 +38,9 @@
                             aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://x.com/Soham012" target="_blank" class="social-icon twitter"
-                            aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sohamchavsn03@gmail.com" target="_blank"
+                            class="social-icon mail" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/sohamsc01/" target="_blank" class="social-icon linkedin"
                             aria-label="LinkedIn">
@@ -201,19 +202,23 @@
                                 </div>
                             </div>
                             <div class="projectright">
-                                <h3 style="font-weight: 900;">Project Title</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos
-                                    nisi
-                                    et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum
-                                    dicta
-                                    provident aliquam laborum explicabo dolorem!</p>
-                                <div class="tech-stack">
-                                    <p>Tech - Stack</p>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
+                                <h3 style="font-weight: 900;">CricHeroes Clone – Cricket Tournament Organizer Web App
+                                    CLONE</h3>
+                                <p>A <b>responsive UI</b> clone of the CricHeroes platform, designed to visualize a simplified
+                                    and digitized management system for local cricket tournaments. This project focuses
+                                    on recreating the visual design and user experience of essential features like
+                                    online scoring, tournament promotion, and sponsor showcasing, offering a seamless
+                                    look and feel for players, organizers, and audiences. <b> Login and signup</b>
+                                    functionalities are implemented using <b>local storage.</b></p>
+                                <div class="tech_stack">
+                                    <h3>Tech - Stack</h3>
+                                    <ul class="techs">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
                                 </div>
-                                <a href="#" class="project-link">View Project</a>
+                                <a class="view" href="https://cricheroes-clone.vercel.app/" class="project-link">View Project</a>
                             </div>
                         </div>
                         <!-- <div class="project odd">
@@ -303,55 +308,92 @@
             </div>
         </section>
 
-        <section id="contact" style="padding-top: 80px; margin-top: -80px;">
-            <div class="page4">
-                <h2>Contact Us</h2>
-                <form action="https://formsubmit.co/sohamchavsn03@gmail.com" method="POST">
+        <section id="contact" class="pt-24 scroll-mt-24 bg-gray-50">
+            <div class="max-w-3xl mx-auto px-6 animate-fade-in">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800">Contact Us</h2>
+                    <p class="text-gray-500 mt-2">I’d love to hear from you. Let’s connect!</p>
+                </div>
 
-                    <!-- Redirect to thank you page after form is submitted -->
+                <form action="https://formsubmit.co/sohamchavsn03@gmail.com" method="POST"
+                    class="bg-white bg-opacity-70 backdrop-blur-lg shadow-xl rounded-2xl p-8 space-y-6 border border-gray-200">
+
                     <input type="hidden" name="_next"
                         value="https://portfolio-git-main-soham-chavans-projects.vercel.app/#home">
-
-                    <!-- Disable Captcha -->
                     <input type="hidden" name="_captcha" value="false">
-
-                    <!-- Optional: Customize subject of email -->
                     <input type="hidden" name="_subject" value="New Contact Form Submission">
-
-                    <!-- Optional: Honeypot to prevent spam -->
                     <input type="text" name="_honey" style="display:none">
-
-                    <!-- Optional: Enable plain text email -->
                     <input type="hidden" name="_template" value="table">
 
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your Name" />
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name"
+                            class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com"
+                            class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
                     </div>
 
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject" />
+                    <div>
+                        <label for="subject" class="block text-sm font-semibold text-gray-700">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject"
+                            class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required
-                            placeholder="Your message here..."></textarea>
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."
+                            class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
                     </div>
 
-                    <button type="submit">Send Message</button>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300">
+                            Send Message
+                        </button>
+                    </div>
                 </form>
-
             </div>
         </section>
 
+        <footer class="bg-gray-900 text-white mt-20">
+            <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Connect with Me</h3>
+                    <div class="flex justify-center md:justify-start space-x-5 mt-4">
+                        <a href="https://github.com/harry019" target="_blank" class="hover:text-blue-400"><i
+                                data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/sohamsc01/" target="_blank" class="hover:text-blue-400"><i
+                                data-feather="linkedin"></i></a>
+                        <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-blue-400"
+                            aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sohamchavsn03@gmail.com" target="_blank"
+                            class="hover:text-blue-400"> <i data-feather="mail"></i></a>
+
+                        <a href="https://x.com/Soham012" target="_blank" class="hover:text-blue-400"><i
+                                data-feather="twitter"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Let's Collaborate</h3>
+                    <p class="text-gray-400">Open to freelance and full-time opportunities. Drop a message!</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 text-center py-6 text-gray-400 text-sm">
+                © 2025 Soham Chavan — Designed & Built with ❤️
+            </div>
+        </footer>
+
     </main>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace()</script>
     <script src="script.js"></script>
 </body>
 
