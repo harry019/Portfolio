@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soham Chavan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,24 +14,43 @@
     <nav>
         <p>SOHAM CHAVAN</p>
         <ul>
-            <a target="" href="#">
+            <a href="#home">
                 <li>HOME</li>
             </a>
-            <a target="" href="#">
+            <a href="#about">
                 <li>ABOUT</li>
             </a>
-            <a target="" href="#">
+            <a href="#projects">
                 <li>PROJECTS</li>
             </a>
-            <a target="" href="#">
+            <a href="#contact">
                 <li>CONTACT</li>
             </a>
         </ul>
     </nav>
     <main>
-        <section>
+        <section id="home">
             <div class="page1">
                 <div class="left">
+                    <div class="social-sidebar">
+                        <a href="https://www.instagram.com/_soham1/" target="_blank" class="social-icon instagram"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/Soham012" target="_blank" class="social-icon twitter"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sohamsc01/" target="_blank" class="social-icon linkedin"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/harry019" target="_blank" class="social-icon github"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
                     <div class="circle-container">
                         <img src="IMG-20240627-WA0024.jpg" alt="Profile" class="profile-img" />
                         <svg viewBox="0 0 200 200" class="text-circle">
@@ -49,19 +69,23 @@
                 <div class="right">
                     <div class="aboutme">
                         <div class="header">
-                            <p>HEY, I'M SOHAM CHAVAN</p>
+                            <p>
+                                <span class="slide-left">HEY,</span>
+                                <span class="slide-down">I'M SOHAM CHAVAN</span>
+                            </p>
                         </div>
                         <div class="headet">
                             <p>Frontend Developer skilled in building responsive, user-friendly, and optimized web
                                 applications using HTML, CSS, JavaScript</p>
                         </div>
-                        <button>PROJECTS</button>
+                        <a href="#projects"><button>PROJECTS</button></a>
+                        <a href="scresume1.pdf" download><button>RESUME</button></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="about" style="padding-top: 80px; margin-top: -80px;">
             <div class="page2">
                 <div class="page2head">
                     <p>ABOUT ME</p>
@@ -70,7 +94,7 @@
 
                     <div class="page2left">
                         <div class="page2lefttitle">
-                            <p>Get to know me !</p>
+                            <p id="typingText" class="typewriter"></p>
                         </div>
                         <div class="page2leftdet">
                             <p><b>Frontend</b> Developer skilled in building responsive, user-friendly, and optimized
@@ -114,150 +138,172 @@
             </div>
         </section>
 
-        <section>
+        <section id="projects" style="padding-top: 80px; margin-top: -80px;">
             <div class="page3">
                 <div class="page3head">
                     <p>PROJECTS</p>
                 </div>
 
                 <div class="page3content">
-                    <div class="project">
-                        <div class="projectleft">
-                            <div class="monitor-container">
-                                <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
-                                <div class="video-container">
-                                    <video class="screen-video" autoplay loop muted>
-                                        <source src="spootify clone PC.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                    <div class="projects">
+                        <div class="project odd">
+                            <div class="projectleft">
+                                <div class="monitor-container">
+                                    <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
+                                    <div class="video-container">
+                                        <video class="screen-video" autoplay loop muted>
+                                            <source src="spootify clone PC.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="projectright">
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos nisi
-                                et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum dicta
-                                provident aliquam laborum explicabo dolorem!</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                            <div class="projectright">
+                                <h3>Spotify Clone – Music Streaming UI</h3>
+                                <p>A fully responsive clone of the Spotify web player built using HTML, CSS, and
+                                    JavaScript.
+                                    This project replicates the core UI/UX features of Spotify, including navigation,
+                                    playlists, and interactive album displays. The design is mobile-friendly and
+                                    emphasizes
+                                    modern styling, user interactivity, and accessibility.</p>
+                                <div class="feature">
+                                    <h3>Key Features</h3>
+                                    <ul class="features">
+                                        <li>Dark-themed responsive layout</li>
+                                        <li>Scrollable albums and artist section</li>
+                                        <li>Optimized layout using Flexbox and Grid</li>
+                                        <li>Custom play buttons and interactions</li>
+                                    </ul>
+                                </div>
+                                <div class="tech_stack">
+                                    <h3>Tech - Stack</h3>
+                                    <ul class="techs">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                                <a class="view"
+                                    href="https://spotifyclone-fe-git-main-soham-chavans-projects.vercel.app/"
+                                    class="project-link">View Project</a>
                             </div>
-                            <a href="#" class="project-link">View Project</a>
                         </div>
-                    </div>
-                    <div class="project">
-                        <div class="projectleft">
-                            <div class="monitor-container">
-                                <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
-                                <div class="video-container">
-                                    <video class="screen-video" autoplay loop muted>
-                                        <source src="cricheroes.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                        <div class="project even">
+                            <div class="projectleft">
+                                <div class="monitor-container">
+                                    <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
+                                    <div class="video-container">
+                                        <video class="screen-video" autoplay loop muted>
+                                            <source src="cricheroes.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="projectright">
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos nisi
-                                et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum dicta
-                                provident aliquam laborum explicabo dolorem!</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                            <div class="projectright">
+                                <h3 style="font-weight: 900;">Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos
+                                    nisi
+                                    et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum
+                                    dicta
+                                    provident aliquam laborum explicabo dolorem!</p>
+                                <div class="tech-stack">
+                                    <p>Tech - Stack</p>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="project-link">View Project</a>
                             </div>
-                            <a href="#" class="project-link">View Project</a>
                         </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="projectleft">
-                            <div class="monitor-container">
-                                <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
-                                <div class="video-container">
-                                    <video class="screen-video" autoplay loop muted>
-                                        <source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                        <!-- <div class="project odd">
+                            <div class="projectleft">
+                                <div class="monitor-container">
+                                    <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
+                                    <div class="video-container">
+                                        <video class="screen-video" autoplay loop muted>
+                                            <source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="projectright">
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos nisi
-                                et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum dicta
-                                provident aliquam laborum explicabo dolorem!</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                            <div class="projectright">
+                                <h3>Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos
+                                    nisi
+                                    et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum
+                                    dicta
+                                    provident aliquam laborum explicabo dolorem!</p>
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="project-link">View Project</a>
                             </div>
-                            <a href="#" class="project-link">View Project</a>
                         </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="projectleft">
-                            <div class="monitor-container">
-                                <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
-                                <div class="video-container">
-                                    <video class="screen-video" autoplay loop muted>
-                                        <source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                        <div class="project even">
+                            <div class="projectleft">
+                                <div class="monitor-container">
+                                    <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
+                                    <div class="video-container">
+                                        <video class="screen-video" autoplay loop muted>
+                                            <source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="projectright">
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos nisi
-                                et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum dicta
-                                provident aliquam laborum explicabo dolorem!</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                            <div class="projectright">
+                                <h3>Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos
+                                    nisi
+                                    et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum
+                                    dicta
+                                    provident aliquam laborum explicabo dolorem!</p>
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="project-link">View Project</a>
                             </div>
-                            <a href="#" class="project-link">View Project</a>
                         </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="projectleft">
-                            <div class="monitor-container">
-                                <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
-                                <div class="video-container">
-                                    <video class="screen-video" autoplay loop muted>
-                                        <source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                        <div class="project odd">
+                            <div class="projectleft">
+                                <div class="monitor-container">
+                                    <img src="monitorscreen.avif" alt="Monitor Frame" class="monitor-frame">
+                                    <div class="video-container">
+                                        <video class="screen-video" autoplay loop muted>
+                                            <source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="projectright">
-                            <h3>Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos nisi
-                                et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum dicta
-                                provident aliquam laborum explicabo dolorem!</p>
-                            <div class="tech-stack">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                            <div class="projectright">
+                                <h3>Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur assumenda eos
+                                    nisi
+                                    et recusandae dolore, minus cum illo ullam repudiandae incidunt repellendus rerum
+                                    dicta
+                                    provident aliquam laborum explicabo dolorem!</p>
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="#" class="project-link">View Project</a>
                             </div>
-                            <a href="#" class="project-link">View Project</a>
-                        </div>
+                        </div> -->
                     </div>
-
                 </div>
-
-                <!-- more project divs -->
             </div>
             </div>
         </section>
 
-        <section>
+        <section id="contact" style="padding-top: 80px; margin-top: -80px;">
             <div class="page4">
                 <h2>Contact Us</h2>
                 <form action="https://formsubmit.co/sohamchavsn03@gmail.com" method="POST">
