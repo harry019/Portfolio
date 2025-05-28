@@ -1,4 +1,4 @@
-# 💼 Soham Chavan's Developer Portfolio
+# 💼 Portfolio
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences as a frontend developer. It is designed to reflect my passion for web development, clean UI/UX, and continuous learning.
 
